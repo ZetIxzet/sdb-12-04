@@ -18,7 +18,7 @@ JOIN customer cust ON cust.store_id = s.store_id
 GROUP BY s.first_name, s.last_name, c.city
 HAVING COUNT(customer_id) > 300;
 ```
-![Скриншот-1]()
+![Скриншот-1](https://github.com/ZetIxzet/sdb-12-04/blob/main/202909.png)
 
 ### Задание 2
 
@@ -31,7 +31,7 @@ SELECT COUNT(`length`)
 from film
 WHERE `length` > (SELECT avg(`length`)FROM film)
 ```
-![Скриншот-2]()
+![Скриншот-2](https://github.com/ZetIxzet/sdb-12-04/blob/main/202938.png)
 
 ### Задание 3
 
@@ -46,4 +46,4 @@ GROUP by Data_
 ORDER BY sum(amount) DESC
 LIMIT 1;
 ```
-![Скриншот-3]():
+![Скриншот-3](https://github.com/ZetIxzet/sdb-12-04/blob/main/202956.png):
